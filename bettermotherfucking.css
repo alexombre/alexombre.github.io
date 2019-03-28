@@ -1,0 +1,15 @@
+.décalage{
+    display: flex;
+    margin-left: 40px;
+}
+body {
+	display: flex;
+	line-height: 1.6;
+	font-size: 18px;
+	color: #444;
+	padding: 0 10px;
+	margin: 40px auto;
+	max-width: 650px;
+	flex-direction: column;
+
+}
