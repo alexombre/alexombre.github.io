@@ -1,0 +1,109 @@
+body{
+  font-family: arial;
+}
+
+#conteneur {
+display: flex;
+justify-content: flex-end;
+}
+
+#centre {
+  margin-left: 390px;
+  margin-top: 100px;
+}
+
+.footer {
+display : flex;
+flex-wrap: wrap;
+justify-content: space-between;
+bottom: 0;
+font-size: small;
+height: 35px;
+position:absolute;
+width: 100%;
+background-color: #f2f2f2;
+border-top: 1px solid #e4e4e4;
+color : #8c8b86;
+
+}
+
+.France{
+  display : flex;
+  font-size: small;
+  height: 35px;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  padding-left: 27px;
+  align-items: center;
+  color : #8c8b86;
+}
+
+.left, .right {
+display: flex;
+align-items: center;
+
+
+}
+
+.pimp {
+  display: block;
+  padding-left: 27px;
+
+
+}
+.pimp2 {
+  display: block;
+  padding-right: 27px;
+}
+
+.bouton {
+
+margin-top: 10px;
+margin-left: 480px;
+
+
+}
+
+button {
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 14px;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+
+
+}
+
+a {
+   padding: 5px;
+   text-decoration: none;
+   color: black;
+}
+
+#recherche {
+
+  display: block;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  width: 582px;
+  margin-top: 20px;
+
+
+}
+
+input:hover {
+
+  box-shadow: 5px 5px 5px #f2f2f2;
+}
