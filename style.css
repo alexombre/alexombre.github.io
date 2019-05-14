@@ -1,0 +1,75 @@
+
+.primary {
+	background-color: #FFFFFF;
+}
+
+.text-primary {
+  color: #000000;	
+}
+
+.secondary {
+	background-color: #4A89DC;
+}
+
+.dark {
+	background-color: #0E0E0E;
+}
+
+.medium-light {
+	background-color: #535353;
+}
+.light {
+	background-color: #989799;
+}
+
+.warning {
+	background-color: #DE8730;
+}
+
+.danger {
+	background-color: #DE3D30;
+}
+
+.success {
+	background-color: #76DE30;
+}
+
+.info {
+	background-color: #30decd;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Montserrat;
+	font-style: bold;
+}
+
+p, ul, ol, li {
+	font-family: Roboto;
+	size: 14px;
+}
+
+blockquote {
+	font-family: Roboto;
+	font-style: italic;
+}
+
+lead {
+	font-family: Roboto;
+	size: 14px;
+	font-style: bold;
+}
+
+
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
