@@ -52,29 +52,7 @@ const Skills = () => {
         <Descriptions.Item label="Français"><Tag color="blue">C2</Tag>  </Descriptions.Item>
         <Descriptions.Item label="Anglais"><Tag color="green">B2</Tag></Descriptions.Item>
         <Descriptions.Item label="Espagnol"><Tag color="volcano">A1</Tag></Descriptions.Item>
-      </Descriptions>
-      <Divider>Légende</Divider>
-      <Descriptions>
-        <Descriptions.Item label="Notion">
-          <Tag color="volcano">A1</Tag>
-        </Descriptions.Item>
-        <Descriptions.Item label="Intermédiaire">
-          <Tag color="orange">A2</Tag>
-        </Descriptions.Item>
-        <Descriptions.Item label="Indépendant">
-          <Tag color="gold">B1</Tag>
-        </Descriptions.Item>
-        <Descriptions.Item label="Avancée">
-          <Tag color="green">B2</Tag>
-        </Descriptions.Item>
-        <Descriptions.Item label="Courant">
-          <Tag color="cyan">C1</Tag>
-        </Descriptions.Item>
-        <Descriptions.Item label="Maîtrise">
-          <Tag color="blue">C2</Tag>  
-        </Descriptions.Item>
-      </Descriptions>
-        
+      </Descriptions>       
       </div>
     </div>
   )
