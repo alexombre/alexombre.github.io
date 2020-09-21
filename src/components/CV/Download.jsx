@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import resume from 'assets/cv.png';
 import { Tooltip } from 'antd';
-import cv from 'assets/CV_MOUTAPAM.pdf'
+import cv from 'assets/CV AlexandreM1.pdf'
 
 const Download = () => {
   
