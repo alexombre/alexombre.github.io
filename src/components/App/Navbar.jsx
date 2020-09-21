@@ -24,10 +24,10 @@ const Navbar = () => {
           <li class="nav-item">
             <Link class="nav-link text-white" to="/cv">CV</Link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-none">
             <Link class="nav-link text-white" to="/project">Demo</Link>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown d-none">
             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Langage
             </a>

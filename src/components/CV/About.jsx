@@ -2,7 +2,7 @@ import React from 'react';
 import { Descriptions, Image } from 'antd';
 import moment from 'moment';
 import { CheckOutlined } from '@ant-design/icons';
-import me from 'assets/me.png'
+import me from 'assets/Selfie.jpeg'
 
 const About = () => {
   

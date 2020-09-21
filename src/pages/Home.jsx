@@ -4,11 +4,11 @@ import { FormattedMessage } from 'react-intl';
 import StackCards from 'components/Home/StackCards';
 import SkillsList from 'components/Home/SkillsList';
 import { wavyTop, wavyBottom, webDev } from 'assets';
+import Wave from 'react-wavify'
 
 
 
 const Home = () => {
-  
   
   
   return (
@@ -35,23 +35,32 @@ const Home = () => {
         </div>
         
       
-      <div id="stack" className="jumbottron jumbottron-fluid bg-primary">
-        <img
-                  src={wavyTop}
-                  alt="wavy background papercut"
-                  className="img-fluid"
-                />
-        <div className="container">
-          <Divider><h3  className="text-white">Stack Technique</h3> </Divider>
-         
-            <StackCards />
+      <div id="stack" className="jumbottron jumbottron-fluid ">
         
+        <div className="m-0 bg-blue">
+          <Wave className="bg-white" fill="url(#gradient)">
+            <defs>
+              <linearGradient id="gradient" gradientTransform="rotate(90)">
+                <stop offset="10%"  stopColor="#00c6a6" />
+                <stop offset="90%" stopColor="#1488CC" />
+              </linearGradient>
+            </defs>
+          </Wave>
+          <div className="container">
+            <Divider><h3  className="text-white">Stack Technique</h3> </Divider>
+
+              <StackCards />
+
+          </div>
+          <Wave className="bg-white reverse" fill="url(#gradient)">
+            <defs>
+              <linearGradient id="gradient" gradientTransform="rotate(90)">
+                <stop offset="10%"  stopColor="#00c6a6" />
+                <stop offset="90%" stopColor="#1488CC" />
+              </linearGradient>
+            </defs>
+          </Wave>
         </div>
-        <img
-                  src={wavyBottom}
-                  alt="wavy background papercut"
-                  className="img-fluid"
-                />
       </div>
       
     <div id="competences" className="jumbottron jumbottron-fluid bg-transparent">

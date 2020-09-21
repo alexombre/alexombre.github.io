@@ -41,6 +41,11 @@ const Education = () => {
             </div>
               
           </Timeline.Item>
+          <Timeline.Item label="2017-2019">
+            <strong>DUT GEII</strong>, Génie Électriqueet Informatique Industrielle (Niveau)<br/> 
+            <Tag color="geekblue">Langage C/C++</Tag><Tag color="gold">Python</Tag><Tag color="purple">Circuit imprimé</Tag><br/>
+            IUT de Cachan (94) – Université Paris-Saclay
+          </Timeline.Item>
           <Timeline.Item label="2017">
             <strong>Baccalauréat STI2D</strong>, Spécialité Innovation Technologique et
               Eco-Conception <br/> 

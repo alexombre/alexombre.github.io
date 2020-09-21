@@ -3,9 +3,12 @@
 .btn-outline-primary:hover,
 .badge-primary,
 .alert-primary {
-    background-image: linear-gradient(to bottom right,#1488CC,#6c63ff);
+    background-image: linear-gradient(to bottom right,#1488CC,#00c6a6);
 }
 
+.bg-blue {
+  background-color: #1488CC;
+}
 
 
 @keyframes rotate {
@@ -19,6 +22,15 @@
 
 img.rotate {
     animation: rotate 15s infinite linear;
+}
+
+.reverse {
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
 }
 
 @import '~bootstrap/scss/bootstrap.scss';

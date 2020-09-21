@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { Avatar, Layout, Menu, Breadcrumb } from 'antd';
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import { UserOutlined, LaptopOutlined, NotificationOutlined, CarryOutOutlined, AimOutlined, BookOutlined, CoffeeOutlined } from '@ant-design/icons';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +13,8 @@ import Education from 'components/CV/Education';
 import Skills from 'components/CV/Skills';
 import Experiences from 'components/CV/Experiences';
 import Hobbies from 'components/CV/Hobbies';
-import me from 'assets/me.png'
+import Download from 'components/CV/Download'
+import me from 'assets/Selfie.jpeg'
 
 const DownloadIcon = () => {
   
@@ -54,11 +55,11 @@ const CV = () => {
             </div>
             
             <Menu.Item icon={<UserOutlined />} key="1"><Link to="/cv">A propos</Link></Menu.Item>
-            <Menu.Item icon={<UserOutlined />} key="2"><Link to="/cv/experiences">Expériences</Link></Menu.Item>
-            <Menu.Item icon={<UserOutlined />} key="3"><Link to="/cv/skills">Compétences</Link></Menu.Item>
-            <Menu.Item icon={<UserOutlined />} key="4"><Link to="/cv/education">Formation</Link></Menu.Item>
-            <Menu.Item icon={<UserOutlined />} key="5"><Link to="/cv/hobbies">Centre d'intéret</Link></Menu.Item>
-            <Menu.Item icon={<DownloadIcon />} key="6"><a href='' download>Télécharger en format PDF</a></Menu.Item>
+            <Menu.Item icon={<CarryOutOutlined />} key="2"><Link to="/cv/experiences">Expériences</Link></Menu.Item>
+            <Menu.Item icon={<AimOutlined />} key="3"><Link to="/cv/skills">Compétences</Link></Menu.Item>
+            <Menu.Item icon={<BookOutlined />} key="4"><Link to="/cv/education">Formation</Link></Menu.Item>
+            <Menu.Item icon={<CoffeeOutlined />} key="5"><Link to="/cv/hobbies">Centre d'intéret</Link></Menu.Item>
+            <Menu.Item icon={<DownloadIcon />} key="6"><Link to="/cv/download">Télécharger</Link></Menu.Item>
         </Menu>
       </Sider>
       <Layout className="vh-100">
@@ -76,6 +77,9 @@ const CV = () => {
                     </Route>
                     <Route path="/cv/hobbies">
                       <Hobbies />
+                    </Route>
+                    <Route path="/cv/download">
+                      <Download />
                     </Route>
                     <Route exact path="/cv">
                       <About />

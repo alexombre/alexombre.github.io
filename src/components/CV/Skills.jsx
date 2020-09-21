@@ -50,7 +50,7 @@ const Skills = () => {
       </Descriptions>
       <Descriptions title="Linguistique">
         <Descriptions.Item label="Français"><Tag color="blue">C2</Tag>  </Descriptions.Item>
-        <Descriptions.Item label="Anglais"><Tag color="green">B2</Tag></Descriptions.Item>
+        <Descriptions.Item label="Anglais"><Tag color="green">B1</Tag></Descriptions.Item>
         <Descriptions.Item label="Espagnol"><Tag color="volcano">A1</Tag></Descriptions.Item>
       </Descriptions>       
       </div>
