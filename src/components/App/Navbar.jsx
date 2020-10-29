@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FileTextFilled } from '@ant-design/icons';
 
 const Navbar = () => {
   
@@ -29,7 +30,7 @@ const Navbar = () => {
       <div class="collapse navbar-collapse align-self-end justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <Link class="nav-link text-white" to="/cv">CV</Link>
+            <Link class="nav-link text-white media" to="/cv"><FileTextFilled className="align-self-center m-1" /> CV</Link>
           </li>
           <li class="nav-item d-none">
             <Link class="nav-link text-white" to="/project">Demo</Link>
