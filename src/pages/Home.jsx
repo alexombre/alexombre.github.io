@@ -1,16 +1,16 @@
 import React from 'react';
 import { Row, Col, Divider, Progress } from 'antd';
 import { FormattedMessage } from 'react-intl';
-import StackCards from 'components/Home/StackCards';
-import SkillsList from 'components/Home/SkillsList';
-import { wavyTop, wavyBottom, webDev } from 'assets';
+import StackCards from '../components/Home/StackCards';
+import SkillsList from '../components/Home/SkillsList';
+import { wavyTop, wavyBottom, webDev } from '../assets';
 import Wave from 'react-wavify'
-
-
+import { useTranslation, initReactI18next } from "react-i18next";
 
 const Home = () => {
   
-  
+  const {t} = useTranslation();
+
   return (
     <div data-spy="scroll" data-target="#navbar">
       
@@ -20,7 +20,7 @@ const Home = () => {
             <div class="media-body">
               <h1 className="h2">Developpeur <strong className="text-primary">react</strong>if pour vous mettre sur de bons <strong className="text-danger">rails</strong> !</h1>
               <br/>
-              <p><FormattedMessage id="home.intro" /></p>   
+              <p>{t("home.intro") }</p>   
               <button className="btn btn-outline-primary">En savoir plus</button>
             </div>
             <img
@@ -66,7 +66,7 @@ const Home = () => {
     <div id="competences" className="jumbottron jumbottron-fluid bg-transparent">
       
         <div className="container mt-5">
-          <h3  className="text-center text-dark"><FormattedMessage id="home.skills.title" /></h3>
+          <h3  className="text-center text-dark">{t("home.skills.title") }</h3>
           <div class="dropdown-divider"></div>
           <SkillsList />
         </div>

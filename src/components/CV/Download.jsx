@@ -1,8 +1,8 @@
 import React from 'react';
 import moment from 'moment';
-import resume from 'assets/cv.png';
+import resume from '../../assets/cv-2.png';
 import { Tooltip } from 'antd';
-import cv from 'assets/CV AlexandreM.pdf'
+import cv from '../../assets/CV de Alexandre moutapam-1.pdf'
 
 const Download = () => {
   

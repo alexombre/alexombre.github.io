@@ -4,17 +4,17 @@ import { UserOutlined, LaptopOutlined, NotificationOutlined, CarryOutOutlined, A
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+Routes,
   useLocation,
   Link
 } from "react-router-dom";
-import About from 'components/CV/About';
-import Education from 'components/CV/Education';
-import Skills from 'components/CV/Skills';
-import Experiences from 'components/CV/Experiences';
-import Hobbies from 'components/CV/Hobbies';
-import Download from 'components/CV/Download'
-import me from 'assets/Selfie.jpeg'
+import About from '../components/CV/About';
+import Education from '../components/CV/Education';
+import Skills from '../components/CV/Skills';
+import Experiences from '../components/CV/Experiences';
+import Hobbies from '../components/CV/Hobbies';
+import Download from '../components/CV/Download'
+import me from '../assets/Selfie.jpeg'
 
 const DownloadIcon = () => {
   
@@ -25,7 +25,7 @@ const DownloadIcon = () => {
   )
 }
 
-const CV = () => {
+const CV = ({children}) => {
   const { Header, Content, Sider } = Layout;  
   const [displayer,setDisplayer] = useState('d-block');
   return (
@@ -62,29 +62,21 @@ const CV = () => {
             <Menu.Item icon={<DownloadIcon />} key="6"><Link to="/cv/download">Télécharger</Link></Menu.Item>
         </Menu>
       </Sider>
-      <Layout className="vh-100">
+      <Layout className="flex min-vh-100">
             <Content className={displayer} style={{ margin: '24px 16px 0' }}>
               <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-                <Switch>
-                    <Route path="/cv/skills">
-                      <Skills />
-                    </Route>
-                    <Route path="/cv/experiences">
-                      <Experiences />
-                    </Route>
-                    <Route path="/cv/education">
-                     <Education />
-                    </Route>
-                    <Route path="/cv/hobbies">
-                      <Hobbies />
-                    </Route>
-                    <Route path="/cv/download">
-                      <Download />
-                    </Route>
-                    <Route exact path="/cv">
-                      <About />
-                    </Route>
-                </Switch>
+                <Routes>
+                
+                    
+                  <Route index element={<About />} />
+                  <Route path="skills" element={<Skills />} />
+                  <Route path="experiences" element={<Experiences />} />
+                    <Route path="education" element={<Education />} />
+                    <Route path="hobbies" element={<Hobbies />} />
+                    <Route path="download" element={<Download />} />
+                    
+                </Routes>
+                    
               </div>
             </Content>
           </Layout>

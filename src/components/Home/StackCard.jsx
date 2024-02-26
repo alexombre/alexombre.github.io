@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import { Progress } from 'antd';
+import { useTranslation, initReactI18next } from "react-i18next";
 
 
-const StackCard = ({intl,tags, name, src, color, percent, rotate = "false"}) => {
+const StackCard = ({tags, name, src, color, percent, rotate = "false"}) => {
   
   const gradient = {
             from: '#108ee9',
             to: color,
           }
-  const [homeTags, setHomeTags]= useState(intl.formatMessage({ id: "home.tags" }));        
+          const { t } = useTranslation();
+  const [homeTags, setHomeTags]= useState(t("home.tags"));        
   const label = (percent) => {
     let result = ""
     switch (percent) {
@@ -56,4 +58,4 @@ const StackCard = ({intl,tags, name, src, color, percent, rotate = "false"}) => 
   )
 }
 
-export default injectIntl(StackCard)
+export default StackCard

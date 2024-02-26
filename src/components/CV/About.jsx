@@ -2,14 +2,14 @@ import React from 'react';
 import { Descriptions, Image } from 'antd';
 import moment from 'moment';
 import { CheckOutlined } from '@ant-design/icons';
-import me from 'assets/Selfie.jpeg'
+import me from '../../assets/ALEXANDRE_MOUTAPAM_02177.jpg'
 
 const About = () => {
   
   
   return (
-    <div class="card container shadow">
-      <div class="card-body">
+    <div className="card container shadow">
+      <div className="card-body">
         <div className="text-center">
           <img
           width={100}

@@ -12,7 +12,7 @@ const Experiences = () => {
       <div className="card-header bg-primary text-center">
         <h4 className="text-light">Experiences</h4>
       </div>
-      <div class="card-body">
+      <div className="card-body">
         <Divider>Réalisations</Divider>
         <Timeline reverse="true" mode="alternate">
           <Timeline.Item label="2017">
@@ -108,19 +108,19 @@ const Experiences = () => {
               <li>Gestion de l'authentification</li>
             </ul>
           </Timeline.Item>
-          <Timeline.Item dot={<Spin size="small" indicator={antIcon} />} label="En cours">
-            <a href="https://alexombre.github.io/taxiJet77Front/" target="blank"><strong>Taxi Jet 77</strong></a> 
+          <Timeline.Item label="2020-2022">
+            <a href="https://www.instagram.com/loola_france/?hl=fr" target="blank"><strong>Loola</strong></a> 
             <br/> 
-              Freelance
+              Developer FullStack React Native / Ruby On Rails
             <br/> 
             <div>
-              <Tag color="geekblue">ReactJS</Tag>
+              <Tag color="geekblue">React Native</Tag>
               <Tag color="red">Ruby On Rails</Tag>
               <Tag color="purple">Heroku</Tag>
-              <Tag color="blue">Google API</Tag>
+              <Tag color="red">AWS</Tag>
               <Tag color="green">SCRUM</Tag>
-              <Tag color="purple">Bootstrap</Tag>
-              <Tag color="blue">Ant Design</Tag>
+              <Tag color="purple">UX/UI</Tag>
+              <Tag color="blue">TailWind CSS</Tag>
               <Tag>Git</Tag>
             </div>
             <ul>
@@ -130,6 +130,29 @@ const Experiences = () => {
               <li>CRUD Utilisateur</li>
               <li>Gestion de l'authentification</li>
               <li>Envoi de mail automatique</li>
+            </ul>
+          </Timeline.Item>
+          <Timeline.Item dot={<Spin size="small" indicator={antIcon} />} label="2023-En cours">
+            <a href="https://www.lawebsquad.fr/" target="blank"><strong>La Web Squad</strong></a> 
+            <br/> 
+              Freelance Developer FullStack React Native / Ruby On Rails
+            <br/> 
+            <div>
+              <Tag color="geekblue">React Native</Tag>
+              <Tag color="red">Ruby On Rails</Tag>
+              <Tag color="purple">Heroku</Tag>
+              <Tag color="red">Redis</Tag>
+              <Tag color="green">SCRUM</Tag>
+              <Tag color="purple">PostgreSQL</Tag>
+              <Tag color="blue">GitLab CI/CD</Tag>
+            </div>
+            <ul>
+              <li>Responsive design</li>
+              <li>Scrapping de données</li>
+              <li>Création d'une API REST</li>
+              <li>DevOps</li>
+              <li>POO</li>
+              <li>Maintenance corrective</li>
             </ul>
           </Timeline.Item>
         </Timeline>

@@ -1,5 +1,7 @@
-{
-    "home.intro": "Je m'appelle Alexandre MOUTAPAM, j'ai 22 ans et je suis developpeur web & mobile Fullstack",
+import moment from 'moment'
+
+export const home = {
+    "home.intro": `Je m'appelle Alexandre MOUTAPAM, j'ai ${moment().subtract(1998, 'years').format('YY') + ' ans'} et je suis developpeur web & mobile Fullstack`,
     "home.title": "Developpeur reactif pour vous mettre sur de bons rails !",
     "home.btn.start": "En savoir plus",
     "home.stack": "Stack Technique",
@@ -24,7 +26,7 @@
         "content": "La collaboration étant une qualité indispensable, j'ai eu l'occasion d'expérimenter le pair programming à plusieurs reprises à distance ou en présentiel. Slack, Discord et Zoom font partie de la collection d'application que j'utilise en tant que développeur."
     }],
     
-    "home.stack": [{
+    "home.stacks": [{
         "name": "React.JS",
         "tags": ["framework"],
         "src": "react",

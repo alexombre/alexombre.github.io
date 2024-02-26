@@ -1,4 +1,4 @@
-import home from './home.json';
+import {home} from './home';
 
 
 const fr = {

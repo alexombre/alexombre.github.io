@@ -4,34 +4,28 @@
   "private": true,
   "homepage": "http://alexombre.github.io",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-solid-svg-icons": "^5.13.1",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "antd": "^4.4.1",
-    "artoo": "^0.2.1",
-    "bootstrap": "^4.5.0",
-    "dotenv": "^8.2.0",
-    "jest-puppeteer": "^4.4.0",
-    "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "antd": "^5.14.2",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "jquery": "^3.7.1",
+    "moment": "^2.30.1",
+    "node-sass": "^7.0.3",
     "popper.js": "^1.16.1",
-    "puppeteer": "^5.3.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-intl": "^5.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-wavify": "^1.4.0",
-    "sass": "^1.26.10"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.5",
+    "react-intl": "^6.6.2",
+    "react-router-dom": "^6.22.1",
+    "react-scripts": "^5.0.1",
+    "react-wavify": "^1.10.0"
   },
   "scripts": {
-    "start": "NODE_PATH=src/ react-scripts start",
+    "start": "NODE_PATH=./src react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "NODE_PATH=src/ react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.29",
     "gh-pages": "^3.1.0"
   }
 }
